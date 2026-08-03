@@ -6,10 +6,10 @@ in
 pkgs.mkShellNoCC {
   packages = with pkgs; [
     fastfetch
-    pkgs.nikto
-    pkgs.nmap
-    pkgs.sherlock
-    pkgs.sqlmap
-    pkgs.vt-cli
+    nikto
+    nmap
+    sherlock
+    sqlmap
+    vt-cli
   ];
 }
