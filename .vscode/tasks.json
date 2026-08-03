@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "vscode-just",
+			"task": "just build",
+			"problemMatcher": [],
+			"label": "vscode-just: build docker image"
+		}
+	]
+}
