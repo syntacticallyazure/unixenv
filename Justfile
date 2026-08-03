@@ -1,17 +1,21 @@
 alias c := clear
 
+#just --no-highlight as a fix for formatting problems
+
 default:
-    just build serve;
+    just --no-highlight build serve;
 
 serve:
-    -docker run --rm -it -v nix-store:/nix/store azure/nix 'nix-shell'
+    -docker run --rm -it -v nix-store:/nix/store -v nix-cache:/root/.cache/nix azure/nix 'nix-shell'
 
 build:
     docker build -t azure/nix -f Dockerfile .
-    @just volume
+    just --no-highlight volume
 
 volume:
-    @docker volume create nix-store
+    docker volume create nix-store
+    docker volume create nix-cache
 
 clear:
     docker volume rm nix-store
+    docker volume rm nix-cache
