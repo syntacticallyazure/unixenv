@@ -7,7 +7,7 @@ default:
     just serve;
 
 serve:
-    docker run --rm -it -v nix-volume:/nix -v nix-cache:/root/.cache/nix azure/nix 'nix-shell'
+    docker run --rm -it --name azure-environment -v nix-volume:/nix -v nix-cache:/root/.cache/nix azure/nix 'nix-shell'
 
 run:
     just serve
