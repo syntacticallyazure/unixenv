@@ -6,7 +6,7 @@ default:
     -just serve;
 
 serve:
-    docker run --rm -it --name azure-environment azure/nix 'nix-shell'
+    -docker run --rm -it --name azure-environment azure/nix 'nix-shell'
 
 run:
     just serve

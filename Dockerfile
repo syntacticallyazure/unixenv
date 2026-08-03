@@ -10,4 +10,5 @@ RUN nix-shell --command 'exit'
 
 RUN mkdir -p "Documents" "Repositories"
 
-COPY ./src/.config ./config
+#TODO: probably needs some optimisation
+COPY ./src/.config .config
