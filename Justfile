@@ -3,7 +3,7 @@ alias s := serve
 alias r := run
 
 default:
-    just serve;
+    -just serve;
 
 serve:
     docker run --rm -it --name azure-environment azure/nix 'nix-shell'
