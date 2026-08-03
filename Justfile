@@ -6,16 +6,14 @@ default:
     just --no-highlight build serve;
 
 serve:
-    -docker run --rm -it -v nix-store:/nix/store -v nix-cache:/root/.cache/nix azure/nix 'nix-shell'
+    docker run --rm -it -v nix-store:/nix/store -v nix-cache:/root/.cache/nix azure/nix 'nix-shell'
 
 build:
     docker build -t azure/nix -f Dockerfile .
     just --no-highlight volume
 
 volume:
-    docker volume create nix-store
-    docker volume create nix-cache
+    docker volume create nix-volume
 
 clear:
-    docker volume rm nix-store
-    docker volume rm nix-cache
+    docker volume rm nix-volume
