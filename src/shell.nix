@@ -11,5 +11,6 @@ pkgs.mkShellNoCC {
     sherlock
     sqlmap
     vt-cli
+    just
   ];
 }
