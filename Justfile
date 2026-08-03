@@ -4,7 +4,7 @@ alias s := serve
 alias r := run
 
 default:
-    just build serve;
+    just serve;
 
 serve:
     docker run --rm -it -v nix-volume:/nix -v nix-cache:/root/.cache/nix azure/nix 'nix-shell'
