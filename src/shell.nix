@@ -10,7 +10,16 @@ pkgs.mkShellNoCC {
     nmap
     sherlock
     sqlmap
-    vt-cli
     just
+    fd
+    bat
+    eza
+    zoxide
+    xh
+    dust
+    hyperfine
+    delta
+    ripgrep
+    ripgrep-all
   ];
 }

@@ -1,0 +1,29 @@
+alias cat='bat'
+alias ncdu='dust'
+alias du='dust'
+# alias find='fd'
+# find should not 1-1 compatible with fd
+alias queue='pueue'
+alias ls='eza'
+# alias delta='diff'
+alias ripgrep='rga'
+
+alias youtube-dl='yt-dlp'
+alias yt-dl='yt-dlp'
+alias ytdl='yt-dlp'
+
+alias spot-dl='spotdl'
+alias spotify-dl='spotdl'
+
+alias of='onefetch'
+alias ff='fastfetch'
+alias neofetch='fastfetch'
+
+alias aria2c='aria2c --seed-time=0'
+
+mkcd () {
+    mkdir -p -- "$1" && cd -P -- "$1"
+}
+# eval "$(direnv hook bash)"
+alias fd='fd -HIg'
+# eval "$(zoxide init --cmd cd bash)"
