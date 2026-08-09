@@ -25,5 +25,6 @@ pkgs.mkShellNoCC {
     mcstatus
     wget
     aria2c
+    ssh
   ];
 }
