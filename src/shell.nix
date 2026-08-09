@@ -25,5 +25,8 @@ pkgs.mkShellNoCC {
     mcstatus
     wget
     aria2c
+    p7zip
+    zip
+    unzip
   ];
 }
