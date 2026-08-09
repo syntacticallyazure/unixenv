@@ -24,7 +24,7 @@ pkgs.mkShellNoCC {
     ssh-audit
     mcstatus
     wget
-    aria2c
+    aria2
     p7zip
     zip
     unzip
