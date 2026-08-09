@@ -22,5 +22,6 @@ pkgs.mkShellNoCC {
     ripgrep
     ripgrep-all
     ssh-audit
+    mcstatus
   ];
 }
