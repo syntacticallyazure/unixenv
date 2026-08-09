@@ -23,5 +23,7 @@ pkgs.mkShellNoCC {
     ripgrep-all
     ssh-audit
     mcstatus
+    wget
+    aria2c
   ];
 }
