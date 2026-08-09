@@ -1,5 +1,5 @@
 let
-  nixpkgs = fetchTarball "https://github.com/NixOS/nixpkgs/tarball/nixos-24.11";
+  nixpkgs = fetchTarball "https://github.com/NixOS/nixpkgs/tarball/nixos-26.05";
   pkgs = import nixpkgs { config = {}; overlays = []; };
 in
 
@@ -21,5 +21,6 @@ pkgs.mkShellNoCC {
     delta
     ripgrep
     ripgrep-all
+    ssh-audit
   ];
 }
